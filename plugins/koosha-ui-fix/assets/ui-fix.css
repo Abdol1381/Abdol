@@ -395,7 +395,7 @@ a.read-more {
    ========================================================================== */
 .about-page,
 main.about-page {
-	padding-top: calc(var(--header-h, 68px) + 36px) !important;
+	padding-top: calc(var(--header-h, 68px) + 48px) !important;
 	padding-bottom: 72px !important;
 }
 .about-page-header {
@@ -589,4 +589,23 @@ main.about-page {
 .cafe-setup-mini-item .product-card-shade {
 	display: block !important;
 	background: linear-gradient(180deg, transparent 40%, rgba(12,16,14,0.75) 100%) !important;
+}
+
+/* Blog index cards hierarchy */
+.blog-index--min .post-card-cat {
+	background: rgba(63, 92, 80, 0.12) !important;
+	color: var(--koosha-primary-dark, #2f453c) !important;
+	padding: 4px 12px !important;
+	border-radius: 999px !important;
+}
+.blog-index--min .post-excerpt,
+.blog-index--min .post-excerpt p {
+	color: #8a8278 !important;
+}
+.blog-index--min .read-more {
+	color: var(--koosha-primary, #3f5c50) !important;
+	font-weight: 750 !important;
+}
+.blog-index--min .post-meta {
+	color: #a39b90 !important;
 }
