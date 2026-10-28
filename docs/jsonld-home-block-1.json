@@ -1,0 +1,227 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.kooshatajhiz.com/#organization",
+      "name": "کوشا تجهیز",
+      "alternateName": [
+        "Koosha Tajhiz",
+        "KooshaTajhiz",
+        "kooshatajhiz",
+        "کوشا تجهیر"
+      ],
+      "url": "https://www.kooshatajhiz.com/",
+      "sameAs": [
+        "https://www.instagram.com/kooshatajhiz/",
+        "https://www.kooshatajhiz.com/llms.txt",
+        "https://wa.me/989191499042"
+      ],
+      "knowsAbout": [
+        "کوشا تجهیز",
+        "Koosha Tajhiz",
+        "kooshatajhiz",
+        "علیرضا عبدل",
+        "Alireza Abdol",
+        "طراح سایت کوشا تجهیز",
+        "فروشگاه کوشا تجهیز",
+        "خرید اسپرسوساز صنعتی",
+        "قیمت اسپرسوساز صنعتی",
+        "قیمت دستگاه اسپرسو صنعتی",
+        "اسپرسوساز صنعتی دست دوم",
+        "خرید اسپرسو ساز صنعتی دست دوم",
+        "اسپرسوساز صنعتی استوک",
+        "اسپرسو ساز صنعتی کارکرده",
+        "خرید اسپرسوساز دست دوم",
+        "قیمت اسپرسوساز دو گروپ",
+        "اسپرسو ماشین صنعتی",
+        "دستگاه اسپرسو صنعتی",
+        "دستگاه اسپرسو سیمونلی مدل آپیا لایف",
+        "خرید اسپرسوساز سیمونلی کارکرده",
+        "قیمت اسپرسوساز سیمونلی آپیا لایف کارکرده",
+        "دستگاه اسپرسوساز صنعتی دست دوم سیمونلی آپیا لایف",
+        "قیمت دستگاه اسپرسو جیمبالی",
+        "دستگاه اسپرسو جیمبالی مدل M23",
+        "خرید لااسپازیاله S2 کارکرده",
+        "تجهیزات کافی شاپ",
+        "تجهیزات دست دوم کافه",
+        "خرید آسیاب قهوه صنعتی",
+        "قیمت آسیاب قهوه صنعتی",
+        "خرید یخ ساز صنعتی کافی شاپ",
+        "خرید بلندر صنعتی کافی شاپ",
+        "راه‌اندازی کافی‌شاپ",
+        "بهترین فروشگاه تجهیزات کافی‌شاپ",
+        "اسپرسو ساز کارکرده",
+        "قیمت اسپرسوساز صنعتی 1405",
+        "دستگاه اسپرسو",
+        "اسپرسو ساز صنعتی",
+        "La Cimbali M23UP",
+        "تجهیزات کافی شاپ کارکرده"
+      ],
+      "description": "کوشا تجهیز (Koosha Tajhiz) فروشگاه تخصصی خرید اسپرسوساز صنعتی، قیمت دستگاه اسپرسو دو گروپ، آسیاب قهوه صنعتی و تجهیزات کافی‌شاپ نو و کارکرده است. دامنه رسمی ف…",
+      "inLanguage": "fa-IR",
+      "slogan": "خرید اسپرسوساز صنعتی و تجهیزات کافی‌شاپ — نو و کارکرده",
+      "keywords": "خرید اسپرسوساز صنعتی,قیمت دستگاه اسپرسو صنعتی,اسپرسوساز صنعتی دست دوم,آسیاب قهوه صنعتی,کوشا تجهیز",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "تهران — بازدید حضوری با هماهنگی قبلی",
+        "addressLocality": "تهران",
+        "addressRegion": "تهران",
+        "addressCountry": "IR"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "09191499042",
+          "areaServed": "IR",
+          "availableLanguage": [
+            "fa",
+            "Persian"
+          ]
+        }
+      ],
+      "telephone": "09191499042",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.kooshatajhiz.com/wp-content/themes/cafee/assets/images/logo.webp",
+        "contentUrl": "https://www.kooshatajhiz.com/wp-content/themes/cafee/assets/images/logo.webp",
+        "inLanguage": "fa-IR",
+        "creator": {
+          "@type": "Organization",
+          "name": "کوشا تجهیز",
+          "alternateName": "Koosha Tajhiz",
+          "url": "https://www.kooshatajhiz.com/"
+        },
+        "creditText": "کوشا تجهیز",
+        "copyrightNotice": "© کوشا تجهیز",
+        "license": "https://www.kooshatajhiz.com/image-license/",
+        "acquireLicensePage": "https://www.kooshatajhiz.com/about/",
+        "name": "کوشا تجهیز — لوگو",
+        "caption": "کوشا تجهیز — لوگو",
+        "description": "کوشا تجهیز — لوگو",
+        "alternateName": "کوشا تجهیز — لوگو"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.kooshatajhiz.com/wp-content/themes/cafee/assets/images/logo.webp",
+        "contentUrl": "https://www.kooshatajhiz.com/wp-content/themes/cafee/assets/images/logo.webp",
+        "inLanguage": "fa-IR",
+        "creator": {
+          "@type": "Organization",
+          "name": "کوشا تجهیز",
+          "alternateName": "Koosha Tajhiz",
+          "url": "https://www.kooshatajhiz.com/"
+        },
+        "creditText": "کوشا تجهیز",
+        "copyrightNotice": "© کوشا تجهیز",
+        "license": "https://www.kooshatajhiz.com/image-license/",
+        "acquireLicensePage": "https://www.kooshatajhiz.com/about/",
+        "name": "کوشا تجهیز — لوگو",
+        "caption": "کوشا تجهیز — لوگو",
+        "description": "کوشا تجهیز — لوگو",
+        "alternateName": "کوشا تجهیز — لوگو"
+      },
+      "creator": {
+        "@id": "https://www.kooshatajhiz.com/#designer"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.kooshatajhiz.com/#designer",
+      "name": "علیرضا عبدل",
+      "alternateName": [
+        "Alireza Abdol",
+        "Alireza Abdol",
+        "علیرضا عبدل"
+      ],
+      "jobTitle": "طراح و سازنده وب‌سایت",
+      "description": "علیرضا عبدل (Alireza Abdol) طراح، سازنده و توسعه‌دهنده وب‌سایت رسمی کوشا تجهیز به آدرس kooshatajhiz.com است.",
+      "url": "https://www.kooshatajhiz.com/",
+      "knowsAbout": [
+        "طراحی وب‌سایت",
+        "سئو",
+        "WordPress",
+        "WooCommerce",
+        "Web Design",
+        "SEO",
+        "کوشا تجهیز",
+        "Koosha Tajhiz"
+      ],
+      "mainEntityOfPage": "https://www.kooshatajhiz.com/about/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kooshatajhiz.com/#website",
+      "name": "کوشا تجهیز",
+      "alternateName": "Koosha Tajhiz",
+      "url": "https://www.kooshatajhiz.com/",
+      "publisher": {
+        "@id": "https://www.kooshatajhiz.com/#organization"
+      },
+      "creator": {
+        "@id": "https://www.kooshatajhiz.com/#designer"
+      },
+      "author": {
+        "@id": "https://www.kooshatajhiz.com/#designer"
+      },
+      "inLanguage": "fa-IR",
+      "copyrightHolder": {
+        "@id": "https://www.kooshatajhiz.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.kooshatajhiz.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Store",
+      "@id": "https://www.kooshatajhiz.com/#store",
+      "name": "کوشا تجهیز",
+      "alternateName": [
+        "Koosha Tajhiz",
+        "فروشگاه کوشا تجهیز"
+      ],
+      "description": "کوشا تجهیز (Koosha Tajhiz) فروشگاه تخصصی خرید اسپرسوساز صنعتی، قیمت دستگاه اسپرسو دو گروپ، آسیاب قهوه صنعتی و تجهیزات کافی‌شاپ نو و کارکرده است. دامنه رسمی ف…",
+      "url": "https://www.kooshatajhiz.com/shop/",
+      "priceRange": "$$",
+      "currenciesAccepted": "IRR",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Iran"
+      },
+      "availableLanguage": [
+        "fa",
+        "en"
+      ],
+      "parentOrganization": {
+        "@id": "https://www.kooshatajhiz.com/#organization"
+      },
+      "inLanguage": "fa-IR",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "تهران — بازدید حضوری با هماهنگی قبلی",
+        "addressLocality": "تهران",
+        "addressRegion": "تهران",
+        "addressCountry": "IR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday",
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      "telephone": "09191499042"
+    }
+  ]
+}

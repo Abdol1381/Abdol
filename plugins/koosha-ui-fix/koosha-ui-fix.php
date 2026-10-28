@@ -2,13 +2,13 @@
 /**
  * Plugin Name: Koosha UI Fix
  * Description: Fix shop product cards, overlays, button gaps, article cards, Yekan Bakh font, clickable phone/domain.
- * Version: 1.2.1
+ * Version: 1.2.3
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KOOSHA_UI_FIX_VER', '1.2.1' );
+define( 'KOOSHA_UI_FIX_VER', '1.2.3' );
 
 add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style(
@@ -43,32 +43,61 @@ function koosha_ui_fix_linkify( $content ) {
 	return koosha_ui_fix_linkify_html( $content );
 }
 
+/**
+ * Linkify visible HTML text only.
+ * Never touch <script> (JSON-LD), <style>, <noscript>, <textarea>, or HTML attributes.
+ */
 function koosha_ui_fix_linkify_html( $html ) {
-	// Skip already-linked URLs (attribute or inside <a>).
+	if ( ! is_string( $html ) || $html === '' ) {
+		return $html;
+	}
+
+	$protected = array();
+	// Protect scripts/styles AND existing anchors so we never nest <a> or break JSON-LD.
 	$html = preg_replace_callback(
-		'/(?<!href=["\'])(?<!src=["\'])(?<!content=["\'])https?:\/\/(www\.)?kooshatajhiz\.com\/?(?![^<]*>)/u',
-		static function () {
-			return '<a class="koosha-inline-link" href="https://www.kooshatajhiz.com/">www.kooshatajhiz.com</a>';
+		'/<(script|style|noscript|textarea|code|pre|a)\b[^>]*>.*?<\/\1>/is',
+		static function ( $m ) use ( &$protected ) {
+			$key               = '<!--KOOSHA_PROTECT_' . count( $protected ) . '-->';
+			$protected[ $key ] = $m[0];
+			return $key;
 		},
 		$html
 	);
 
-	// Plain www. without scheme.
+	// Protect tag attributes so href/src/content URLs are not rewritten.
 	$html = preg_replace_callback(
-		'/(?<!href=["\'])(?<!\/\/)(?<!>)www\.kooshatajhiz\.com\/?(?![^<]*>)/u',
-		static function () {
-			return '<a class="koosha-inline-link" href="https://www.kooshatajhiz.com/">www.kooshatajhiz.com</a>';
+		'/<[a-zA-Z][^>]*>/s',
+		static function ( $m ) use ( &$protected ) {
+			$key               = '<!--KOOSHA_PROTECT_' . count( $protected ) . '-->';
+			$protected[ $key ] = $m[0];
+			return $key;
 		},
 		$html
 	);
 
+	$html = preg_replace(
+		'/https?:\/\/(www\.)?kooshatajhiz\.com\/?/u',
+		'<a class="koosha-inline-link" href="https://www.kooshatajhiz.com/">www.kooshatajhiz.com</a>',
+		$html
+	);
+
+	$html = preg_replace(
+		'/(?<![\w.\/])www\.kooshatajhiz\.com\/?/u',
+		'<a class="koosha-inline-link" href="https://www.kooshatajhiz.com/">www.kooshatajhiz.com</a>',
+		$html
+	);
+
 	$html = preg_replace_callback(
-		'/(?<!href=["\']tel:)(?<![\d۰-۹])(0?9191499042|09191499042|۰۹۱۹۱۴۹۹۰۴۲)(?![\d۰-۹])/u',
+		'/(?<![\d۰-۹])(0?9191499042|09191499042|۰۹۱۹۱۴۹۹۰۴۲)(?![\d۰-۹])/u',
 		static function ( $m ) {
 			return '<a class="koosha-tel-link koosha-inline-link" href="tel:+989191499042">' . esc_html( $m[1] ) . '</a>';
 		},
 		$html
 	);
+
+	if ( $protected ) {
+		$html = strtr( $html, $protected );
+	}
 
 	return $html;
 }
