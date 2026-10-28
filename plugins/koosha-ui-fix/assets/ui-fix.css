@@ -246,6 +246,7 @@ body .product-card--ui-fix .product-view-hint {
 .consult-air-actions,
 .machine-cta-row,
 .air-actions,
+.air-cta,
 .hero-banner-cta,
 .hero-banner-actions,
 .hero-banners--calm .hero-banner-actions,
@@ -253,6 +254,8 @@ body .product-card--ui-fix .product-view-hint {
 .shop-condition-tabs--seg,
 .front-shop--air .air-tabs,
 .paths-air-grid {
+	display: flex !important;
+	flex-wrap: wrap !important;
 	gap: 14px !important;
 	column-gap: 14px !important;
 	row-gap: 12px !important;

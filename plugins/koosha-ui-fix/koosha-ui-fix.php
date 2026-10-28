@@ -2,13 +2,13 @@
 /**
  * Plugin Name: Koosha UI Fix
  * Description: Fix shop product cards, overlays, button gaps, article cards, Yekan Bakh font, clickable phone/domain.
- * Version: 1.1.1
+ * Version: 1.1.2
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'KOOSHA_UI_FIX_VER', '1.1.1' );
+define( 'KOOSHA_UI_FIX_VER', '1.1.2' );
 
 add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style(
