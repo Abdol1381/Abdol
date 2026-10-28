@@ -388,3 +388,205 @@ a.read-more {
 		gap: 12px !important;
 	}
 }
+
+
+/* ==========================================================================
+   Fixed header clearance (about / inner pages) — stop content under header
+   ========================================================================== */
+.about-page,
+main.about-page {
+	padding-top: calc(var(--header-h, 68px) + 36px) !important;
+	padding-bottom: 72px !important;
+}
+.about-page-header {
+	margin-bottom: 22px !important;
+}
+.about-page-header .section-badge {
+	display: inline-flex !important;
+	margin-bottom: 10px !important;
+	position: relative !important;
+	top: auto !important;
+	z-index: 1 !important;
+}
+.blog-index-hero,
+.single-article-header {
+	padding-top: calc(var(--header-h, 68px) + 28px) !important;
+}
+.cafe-setup-toc {
+	top: var(--header-h, 68px) !important;
+}
+
+/* ==========================================================================
+   About page — clean visual layout with photos
+   ========================================================================== */
+.about-page-inner {
+	max-width: 980px !important;
+}
+.about-page-content > p > strong:first-child {
+	/* hide old keyword-dump leftovers if any */
+}
+.koosha-about {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	color: var(--ink, #171411);
+}
+.koosha-about-hero {
+	margin: 0;
+	border-radius: 22px;
+	overflow: hidden;
+	aspect-ratio: 16 / 9;
+	box-shadow: 0 16px 40px rgba(23, 20, 17, 0.1);
+}
+.koosha-about-hero img,
+.koosha-about-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.koosha-about-lead {
+	margin: 0;
+	font-size: 1.08rem;
+	line-height: 1.9;
+	max-width: 46em;
+	color: #5a5148;
+}
+.koosha-about-grid {
+	display: grid;
+	grid-template-columns: 1.05fr 0.95fr;
+	gap: 22px;
+	align-items: center;
+}
+.koosha-about-grid--rev {
+	direction: ltr;
+}
+.koosha-about-grid--rev > * {
+	direction: rtl;
+}
+.koosha-about-photo {
+	margin: 0;
+	border-radius: 20px;
+	overflow: hidden;
+	aspect-ratio: 5 / 4;
+	background: #e8efe4;
+}
+.koosha-about-copy h2 {
+	margin: 0 0 10px;
+	font-size: 1.35rem;
+	color: var(--moss, #2f453c);
+}
+.koosha-about-copy p,
+.koosha-about-copy li {
+	font-size: 0.98rem;
+	line-height: 1.85;
+	color: #5a5148;
+}
+.koosha-about-copy ul {
+	margin: 10px 0 0;
+	padding-inline-start: 1.2em;
+}
+.koosha-about-points {
+	list-style: none;
+	padding: 0 !important;
+	margin: 0;
+	display: grid;
+	gap: 12px;
+}
+.koosha-about-points li {
+	padding: 14px 16px;
+	border-radius: 14px;
+	background: #fff;
+	border: 1px solid rgba(63, 92, 80, 0.1);
+	box-shadow: 0 6px 18px rgba(45, 74, 62, 0.04);
+}
+.koosha-about-cta {
+	margin-top: 8px;
+	padding: 22px 22px 24px;
+	border-radius: 20px;
+	background: linear-gradient(145deg, rgba(63, 92, 80, 0.08), rgba(255, 255, 255, 0.9));
+	border: 1px solid rgba(63, 92, 80, 0.12);
+}
+.koosha-about-cta h2 {
+	margin: 0 0 10px;
+	font-size: 1.25rem;
+	color: var(--moss, #2f453c);
+}
+.koosha-about-cta p {
+	margin: 0 0 8px;
+	color: #5a5148;
+}
+.koosha-about-actions {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	gap: 12px !important;
+	margin-top: 14px !important;
+}
+@media (max-width: 820px) {
+	.koosha-about-grid,
+	.koosha-about-grid--rev {
+		grid-template-columns: 1fr;
+		direction: rtl;
+	}
+	.koosha-about-hero {
+		aspect-ratio: 16 / 11;
+	}
+}
+
+/* ==========================================================================
+   Cafe setup mini product cards — force readable text (dark overlay if needed)
+   ========================================================================== */
+.cafe-setup-mini-item .product-card,
+.cafe-setup-mini-item .product-card--square,
+.cafe-setup-mini-products .product-card--catalog {
+	aspect-ratio: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+	background: #fff !important;
+	display: flex !important;
+	flex-direction: column !important;
+}
+.cafe-setup-mini-item .product-card-link {
+	display: flex !important;
+	flex-direction: column !important;
+	height: auto !important;
+}
+.cafe-setup-mini-item .product-image {
+	position: relative !important;
+	inset: auto !important;
+	aspect-ratio: 1 / 1 !important;
+	height: auto !important;
+}
+.cafe-setup-mini-item .product-details,
+.cafe-setup-mini-products .product-details {
+	position: relative !important;
+	left: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	background: #fff !important;
+	color: var(--ink, #171411) !important;
+	padding: 10px !important;
+	text-shadow: none !important;
+}
+.cafe-setup-mini-item .product-title,
+.cafe-setup-mini-item .product-price,
+.cafe-setup-mini-item .product-cat-line,
+.cafe-setup-mini-products .product-title,
+.cafe-setup-mini-products .product-price {
+	color: var(--ink, #171411) !important;
+	text-shadow: none !important;
+}
+.cafe-setup-mini-item .product-title {
+	font-size: 0.78rem !important;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+}
+.cafe-setup-mini-item .product-price {
+	color: var(--koosha-primary-dark, #2f453c) !important;
+	font-size: 0.78rem !important;
+}
+/* If any overlay-style leftovers remain inside mini grid, darken image bottom */
+.cafe-setup-mini-item .product-card-shade {
+	display: block !important;
+	background: linear-gradient(180deg, transparent 40%, rgba(12,16,14,0.75) 100%) !important;
+}
